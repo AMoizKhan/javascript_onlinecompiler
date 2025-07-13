@@ -346,7 +346,7 @@ export default function Index() {
               {/* Download Button */}
               <button
                 onClick={downloadCode}
-                className="px-4 py-2 rounded-md text-white text-sm font-medium transition-all duration-200 flex items-center gap-2"
+                className="px-2 lg:px-4 py-2 rounded-md text-white text-xs lg:text-sm font-medium transition-all duration-200 flex items-center gap-1 lg:gap-2"
                 style={{
                   backgroundColor: isDarkMode
                     ? "rgb(26, 127, 55)"
@@ -354,14 +354,15 @@ export default function Index() {
                 }}
               >
                 <svg
-                  width="16"
-                  height="16"
+                  width="14"
+                  height="14"
                   viewBox="0 0 16 16"
                   fill="currentColor"
+                  className="lg:w-4 lg:h-4"
                 >
                   <path d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path>
                 </svg>
-                Download
+                <span className="hidden sm:inline">Download</span>
               </button>
             </div>
           </div>
