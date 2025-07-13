@@ -444,26 +444,30 @@ export default function Index() {
               {isRunning ? (
                 <>
                   <svg
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     viewBox="0 0 16 16"
                     fill="currentColor"
+                    className="lg:w-4 lg:h-4"
                   >
                     <path d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
                   </svg>
-                  Running...
+                  <span className="hidden sm:inline">Running...</span>
+                  <span className="sm:hidden">...</span>
                 </>
               ) : (
                 <>
                   <svg
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     viewBox="0 0 16 16"
                     fill="currentColor"
+                    className="lg:w-4 lg:h-4"
                   >
                     <path d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zm4.879-2.773l4.264 2.559a.25.25 0 010 .428l-4.264 2.559A.25.25 0 016 10.559V5.442a.25.25 0 01.379-.215z"></path>
                   </svg>
-                  Run Code
+                  <span className="hidden sm:inline">Run Code</span>
+                  <span className="sm:hidden">Run</span>
                 </>
               )}
             </button>
