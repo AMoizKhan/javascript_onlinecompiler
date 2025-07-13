@@ -513,7 +513,7 @@ export default function Index() {
           </div>
 
           <div
-            className="flex-1 p-6 overflow-y-auto font-mono text-sm leading-relaxed"
+            className="flex-1 p-6 overflow-y-auto js-compiler-output js-compiler-scroll"
             style={{ backgroundColor: baseTheme.background }}
           >
             {output.length === 0 ? (
