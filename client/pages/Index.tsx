@@ -403,10 +403,10 @@ export default function Index() {
       )}
 
       {/* Main Content */}
-      <main className="grid grid-cols-1 lg:grid-cols-2 h-[calc(100vh-81px)]">
+      <main className="grid grid-cols-1 lg:grid-cols-2 h-[calc(100vh-81px)] js-compiler-mobile-stack">
         {/* Code Editor Panel */}
         <div
-          className="flex flex-col border-r"
+          className="flex flex-col border-r js-compiler-mobile-border"
           style={{ borderColor: baseTheme.border }}
         >
           <div
