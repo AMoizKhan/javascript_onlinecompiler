@@ -469,7 +469,7 @@ export default function Index() {
             value={code}
             onChange={(e) => setCode(e.target.value)}
             placeholder="Write your JavaScript code here..."
-            className="flex-1 p-6 border-0 outline-0 resize-none font-mono text-sm leading-relaxed"
+            className="flex-1 p-6 border-0 outline-0 resize-none js-compiler-textarea js-compiler-scroll"
             style={{
               backgroundColor: baseTheme.background,
               color: baseTheme.foreground,
