@@ -269,11 +269,11 @@ export default function Index() {
           borderBottomColor: baseTheme.border,
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 border-b">
-          <div className="flex items-center justify-between gap-6">
-            <div className="flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 py-3 lg:py-4 border-b">
+          <div className="flex items-center justify-between gap-3 lg:gap-6">
+            <div className="flex items-center gap-2 lg:gap-4">
               <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold"
+                className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg flex items-center justify-center text-base lg:text-lg font-bold"
                 style={{
                   backgroundColor: isDarkMode
                     ? "rgb(121, 192, 255)"
@@ -283,12 +283,12 @@ export default function Index() {
               >
                 JS
               </div>
-              <h1 className="text-2xl font-semibold tracking-tight">
+              <h1 className="text-lg lg:text-2xl font-semibold tracking-tight">
                 JavaScript Compiler
               </h1>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 lg:gap-3">
               {/* Snippets Button */}
               <button
                 onClick={() => setShowSnippets(!showSnippets)}
