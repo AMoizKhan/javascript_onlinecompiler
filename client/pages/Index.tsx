@@ -412,27 +412,29 @@ export default function Index() {
           style={{ borderColor: baseTheme.border }}
         >
           <div
-            className="px-6 py-4 border-b flex items-center justify-between"
+            className="px-4 lg:px-6 py-3 lg:py-4 border-b flex items-center justify-between"
             style={{
               backgroundColor: baseTheme.card,
               borderColor: baseTheme.border,
             }}
           >
-            <h2 className="text-lg font-semibold flex items-center gap-2">
+            <h2 className="text-base lg:text-lg font-semibold flex items-center gap-2">
               <svg
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 16 16"
                 fill="currentColor"
+                className="lg:w-4 lg:h-4"
               >
                 <path d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06L11.28 3.22z"></path>
               </svg>
-              Code Editor
+              <span className="hidden sm:inline">Code Editor</span>
+              <span className="sm:hidden">Code</span>
             </h2>
             <button
               disabled={isRunning}
               onClick={runCode}
-              className="px-4 py-2 rounded-md text-white text-sm font-medium transition-all duration-200 flex items-center gap-2 disabled:opacity-50"
+              className="px-3 lg:px-4 py-2 rounded-md text-white text-xs lg:text-sm font-medium transition-all duration-200 flex items-center gap-1 lg:gap-2 disabled:opacity-50"
               style={{
                 backgroundColor: isDarkMode
                   ? "rgb(26, 127, 55)"
