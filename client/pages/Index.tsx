@@ -292,7 +292,7 @@ export default function Index() {
               {/* Snippets Button */}
               <button
                 onClick={() => setShowSnippets(!showSnippets)}
-                className="px-4 py-2 rounded-md border text-sm font-medium transition-all duration-200 flex items-center gap-2"
+                className="px-2 lg:px-4 py-2 rounded-md border text-xs lg:text-sm font-medium transition-all duration-200 flex items-center gap-1 lg:gap-2"
                 style={{
                   backgroundColor: baseTheme.card,
                   borderColor: baseTheme.cardBorder,
@@ -300,15 +300,16 @@ export default function Index() {
                 }}
               >
                 <svg
-                  width="16"
-                  height="16"
+                  width="14"
+                  height="14"
                   viewBox="0 0 16 16"
                   fill="currentColor"
+                  className="lg:w-4 lg:h-4"
                 >
                   <path d="M2 4.75C2 3.784 2.784 3 3.75 3h8.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0112.25 13h-8.5A1.75 1.75 0 012 11.25v-6.5zm1.75-.25a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25v-6.5a.25.25 0 00-.25-.25h-8.5z"></path>
                   <path d="M6.5 6.5a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"></path>
                 </svg>
-                Snippets
+                <span className="hidden sm:inline">Snippets</span>
               </button>
 
               {/* Theme Toggle */}
