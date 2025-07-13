@@ -372,7 +372,7 @@ export default function Index() {
       {/* Snippets Dropdown */}
       {showSnippets && (
         <div
-          className="fixed top-20 right-6 z-50 rounded-lg border shadow-xl min-w-[200px] max-h-[300px] overflow-y-auto p-2"
+          className="fixed top-16 lg:top-20 right-2 lg:right-6 z-50 rounded-lg border shadow-xl min-w-[180px] lg:min-w-[200px] max-h-[250px] lg:max-h-[300px] overflow-y-auto p-2 js-compiler-scroll"
           style={{
             backgroundColor: baseTheme.background,
             borderColor: baseTheme.cardBorder,
